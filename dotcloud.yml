@@ -1,4 +1,4 @@
 www:
   type: python
 db:
-  type: postgresql
+  type: postgis
