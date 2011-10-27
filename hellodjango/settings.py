@@ -15,7 +15,7 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'template1',
         'USER': env['DOTCLOUD_DB_SQL_LOGIN'],
         'PASSWORD': env['DOTCLOUD_DB_SQL_PASSWORD'],
@@ -123,6 +123,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'django.contrib.gis',
 )
 
 # A sample logging configuration. The only tangible logging
